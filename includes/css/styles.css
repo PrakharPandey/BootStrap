@@ -1,0 +1,60 @@
+body {
+   background-color: #efc;
+
+}
+
+
+.logo img {
+   width: 30%;
+   height: 70%;
+}
+
+.short {
+   width: 100%;
+   height: 30%;
+}
+
+.shorte img{
+   width: 30px;
+   height: 30px;
+}
+
+footer {
+   background: #122;
+   color: #eee;
+   font-size: 11px;
+   padding: 20px;
+   margin-top: 5px;
+}
+
+.card img {
+   width: 100%;
+   height: 180px;
+}
+
+.fontee h3, .fontee p {
+   color: #333;
+}
+
+.jum-image {
+   background-image: url(../../images/hero.jpg);
+   width: 100%;
+   height: 100%;
+}
+
+
+
+/* Portrait & landscape phone */
+@media (max-width: 480px) {
+	
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+	
+}
