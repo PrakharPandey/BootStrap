@@ -1,8 +1,8 @@
 This repository contains 2 webpages(built using Bootstrap 4) namely-
 
--> index.html
+-> index.html - It contains weather information in the form of cards and displays images in a carousel.
 
--> another.html
+-> videos.html - It contains weather related videos embedded from youtube.
 
 User can switch among these pages using pagination at the bottom of each page.
 
