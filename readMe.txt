@@ -8,4 +8,4 @@ User can switch among these pages using pagination at the bottom of each page.
 
 It also includes user defined-
 
-==>includes/css/styles.css
+==>css/styles.css

@@ -7,12 +7,12 @@
     <!-- Mobile viewport optimized -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <!-- Bootstrap CSS -->
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-glyphicons.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <link href="includes/css/styles.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
     <!-- Include Modernizr in the head, before any other Javascript -->
-    <script src="includes/js/modernizr-2.6.2.min.js"></script>
+    <script src="js/modernizr-2.6.2.min.js"></script>
 </head>
 
 <body>
@@ -64,11 +64,11 @@
     <!-- Navbar End -->
     <!-- Carousel -->
     <div class="container">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div id="carousel-home" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carousel-home" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-home" data-slide-to="1"></li>
+                <li data-target="#carousel-home" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
@@ -93,11 +93,11 @@
                     </div>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <a class="carousel-control-prev" href="#carousel-home" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <a class="carousel-control-next" href="#carousel-home" role="button" data-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
@@ -113,7 +113,7 @@
                     <div class="card-block">
                         <h4 class="card-title text-center">Heavy showers in UP</h4>
                         <p class="card-text text-justify">The state of Uttar Pradesh has been receiving moderate to heavy showers from the past two days. Mainly northern districts including Bareilly, Moradabad, have been receiving good rains. However, southern districts have also received scattered light showers. </p>
-                        <button type="button" class="btn btn-primary" data-container="body" data-placement="right" data-toggle="popover" data-trigger="focus" data-content="However, southern districts such as Varanasi, Agra, Orai, and Fursatganj have also received scattered light showers.">Read More...</button>
+                        <button type="button" class="btn btn-primary align-bottom" data-container="body" data-placement="right" data-toggle="popover" data-trigger="focus" data-content="However, southern districts such as Varanasi, Agra, Orai, and Fursatganj have also received scattered light showers.">Read More...</button>
                     </div>
                 </div>
             </div>
@@ -123,7 +123,7 @@
                     <div class="card-block">
                         <h4 class="card-title text-center">Wind in Delhi/NCR Region</h4>
                         <p class="card-text text-justify">The axis of Monsoon trough has now shifted towards the foothills of Himalayas. Thus, now, westerly winds are blowing over Delhi and the NCR region. These westerly winds are relatively drier in nature, humidity levels have also decreased. </p>
-                        <button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                        <button type="button" class="btn btn-primary align-bottom" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
                             Read More...
                         </button>
                     </div>
@@ -141,7 +141,7 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container mt-2">
         <div class="row">
             <div class="col-sm-4">
                 <div class="card card-outline-info">
@@ -178,7 +178,7 @@
     <!-- Card End -->
     <!-- Paging -->
     <nav aria-label="Page navigation example">
-        <ul class="pagination pagination-sm justify-content-center pag-margin">
+        <ul class="pagination pagination-sm justify-content-center pag-margin mt-3">
             <li class="page-item">
                 <a class="page-link" href="#" aria-label="Previous">
         <span aria-hidden="true">&laquo;</span>
@@ -221,9 +221,19 @@
                             <a href="https://youtube.com" target="_blank"><img src="./images/youtube.png"></a>
                             <a href="https://instagram.com" target="_blank"><img src="./images/insta.png"></a>
                             <a href="https://twitter.com" target="_blank"><img src="./images/twitter.png"></a></p>
-                        <br>
-                        <input type="email" placeholder="Subscribe For Updates">&nbsp;&nbsp;
-                        <button>Subscribe</button>
+                        
+                        <form action="" class="form-inline">
+                            <div class="form-group">
+                                <label for="" class="sr-only">Email</label>
+                                    <input type="email" placeholder="Subscribe For Updates" class="form-control form-control-sm">
+                                
+                            </div>
+                            <div class="form-group">
+                              <label for="" class="sr-only">Subscribe Button</label>
+                                <button class="btn btn-info btn-sm">Subscribe</button>
+                            </div>
+                        </form>
+                
                     </div>
                 </div>
             </div>
@@ -239,18 +249,7 @@
     window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')
     </script>
     <!-- Bootstrap JS -->
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    <!-- Custom JS -->
-    <script src="includes/js/script.js"></script>
-    <script>
-    $(function() {
-        $('[data-toggle="popover"]').popover()
-    });
-
-    $(".popover-dismiss").popover({
-        trigger: "focus"
-    });
-    </script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>

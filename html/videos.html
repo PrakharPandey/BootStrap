@@ -7,12 +7,12 @@
     <!-- Mobile viewport optimized -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <!-- Bootstrap CSS -->
-    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap-glyphicons.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <link href="../includes/css/styles.css" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet">
     <!-- Include Modernizr in the head, before any other Javascript -->
-    <script src="../includes/js/modernizr-2.6.2.min.js"></script>
+    <script src="../js/modernizr-2.6.2.min.js"></script>
 </head>
 
 <body>
@@ -70,15 +70,15 @@
                 <br>hard to track air pollution. Please help collect this
                 <br>data to keep your family and neighbors healthy.</p>
             <div class="row">
-                <div class="col-3 push-3">
+                <div class="col-3 push-3 hidden-xs-down">
                     <input class="form-control mr-sm-2 jumbo-col" type="text" placeholder="Your Area Code">
                 </div>
-                <div class="col-3 push-3">
+                <div class="col-3 push-3 hidden-xs-down">
                     <input class="form-control mr-sm-2 jumbo-col" type="text" placeholder="Air Quality">
                 </div>
             </div>
             <div class="row text-center">
-                <div class="col-4 push-4">
+                <div class="col-4 push-4 hidden-xs-down">
                     <a class="btn btn-md jumbo-col2" href="#" role="button">Submit</a>
                 </div>
             </div>
@@ -161,9 +161,17 @@
                             <a href="https://youtube.com" target="_blank"><img src="../images/youtube.png"></a>
                             <a href="https://instagram.com" target="_blank"><img src="../images/insta.png"></a>
                             <a href="https://twitter.com" target="_blank"><img src="../images/twitter.png"></a></p>
-                        <br>
-                        <input type="email" placeholder="Subscribe For Updates">&nbsp;&nbsp;
-                        <button>Subscribe</button>
+                       <form action="" class="form-inline">
+                            <div class="form-group">
+                                <label for="" class="sr-only">Email</label>
+                                    <input type="email" placeholder="Subscribe For Updates" class="form-control form-control-sm">
+                                
+                            </div>
+                            <div class="form-group">
+                              <label for="" class="sr-only">Subscribe Button</label>
+                                <button class="btn btn-info btn-sm">Subscribe</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -179,18 +187,7 @@
     window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')
     </script>
     <!-- Bootstrap JS -->
-    <script src="../bootstrap/js/bootstrap.min.js"></script>
-    <!-- Custom JS -->
-    <script src="../includes/js/script.js"></script>
-    <script>
-    $(function() {
-        $('[data-toggle="popover"]').popover()
-    });
-
-    $(".popover-dismiss").popover({
-        trigger: "focus"
-    });
-    </script>
+    <script src="../js/bootstrap.min.js"></script>
 </body>
 
 </html>
