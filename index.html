@@ -13,13 +13,16 @@
     <link href="includes/css/styles.css" rel="stylesheet">
     <!-- Include Modernizr in the head, before any other Javascript -->
     <script src="includes/js/modernizr-2.6.2.min.js"></script>
+    <script rel="text/javascript">
+    $('#element').popover('show');
+    </script>
 </head>
 
 <body>
     <!-- Logo -->
     <div class="container">
         <div class="logo">
-            &nbsp; <img src="images/logo1.png">
+            &nbsp; <img class="img-fluid" src="images/logo1.png">
         </div>
     </div>
     <!-- Logo End -->
@@ -113,7 +116,7 @@
                     <div class="card-block">
                         <h4 class="card-title text-center">Heavy showers in UP</h4>
                         <p class="card-text text-justify">The state of Uttar Pradesh has been receiving moderate to heavy showers from the past two days. Mainly northern districts including Bareilly, Moradabad, have been receiving good rains. However, southern districts have also received scattered light showers. </p>
-                        <button type="button" class="btn btn-primary" data-container="body" data-placement="right" data-toggle="popover" data-trigger="focus" data-content="However, southern districts such as Varanasi, Agra, Orai, and Fursatganj have also received scattered light showers.">Read More...</button>
+                        <button type="button" id="element" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="right" data-trigger="focus" data-content="However, southern districts such as Varanasi, Agra, Orai, and Fursatganj have also received scattered light showers.">Read More...</button>
                     </div>
                 </div>
             </div>
@@ -242,15 +245,6 @@
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <!-- Custom JS -->
     <script src="includes/js/script.js"></script>
-    <script>
-    $(function() {
-        $('[data-toggle="popover"]').popover()
-    });
-
-    $(".popover-dismiss").popover({
-        trigger: "focus"
-    });
-    </script>
 </body>
 
 </html>
