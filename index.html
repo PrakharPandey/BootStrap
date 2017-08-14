@@ -13,9 +13,7 @@
     <link href="css/styles.css" rel="stylesheet">
     <!-- Include Modernizr in the head, before any other Javascript -->
     <script src="includes/js/modernizr-2.6.2.min.js"></script>
-    <script rel="text/javascript">
-    $('#element').popover('show');
-    </script>
+    
     <script src="js/modernizr-2.6.2.min.js"></script>
 </head>
 
@@ -117,7 +115,7 @@
                     <div class="card-block">
                         <h4 class="card-title text-center">Heavy showers in UP</h4>
                         <p class="card-text text-justify">The state of Uttar Pradesh has been receiving moderate to heavy showers from the past two days. Mainly northern districts including Bareilly, Moradabad, have been receiving good rains. However, southern districts have also received scattered light showers. </p>
-                        <button type="button" id="element" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="right" data-trigger="focus" data-content="However, southern districts such as Varanasi, Agra, Orai, and Fursatganj have also received scattered light showers.">Read More...</button>
+                        <button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="right" data-trigger="focus" data-content="However, southern districts such as Varanasi, Agra, Orai, and Fursatganj have also received scattered light showers.">Read More...</button>
                     </div>
                 </div>
             </div>
@@ -127,7 +125,7 @@
                     <div class="card-block">
                         <h4 class="card-title text-center">Wind in Delhi/NCR Region</h4>
                         <p class="card-text text-justify">The axis of Monsoon trough has now shifted towards the foothills of Himalayas. Thus, now, westerly winds are blowing over Delhi and the NCR region. These westerly winds are relatively drier in nature, humidity levels have also decreased. </p>
-                        <button type="button" class="btn btn-primary align-bottom" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                        <button type="button" class="btn btn-primary align-bottom" data-container="body" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
                             Read More...
                         </button>
                     </div>
@@ -247,12 +245,11 @@
     <script src="http://code.jquery.com/jquery.js"></script>
     <!-- If no online access, fallback to our hardcoded version of jQuery -->
     <script>
-    window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')
+    window.jQuery || document.write('<script src="js/jquery-1.8.2.min.js"><\/script>')
     </script>
     <!-- Bootstrap JS -->
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    <!-- Custom JS -->
-    <script src="includes/js/script.js"></script>
+ 
+    <script src="js/tether.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>
 
