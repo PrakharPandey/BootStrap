@@ -7,12 +7,12 @@
     <!-- Mobile viewport optimized -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <!-- Bootstrap CSS -->
-    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap-glyphicons.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <link href="../includes/css/styles.css" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet">
     <!-- Include Modernizr in the head, before any other Javascript -->
-    <script src="../includes/js/modernizr-2.6.2.min.js"></script>
+    <script src="../js/modernizr-2.6.2.min.js"></script>
 </head>
 
 <body>
@@ -62,54 +62,74 @@
         </nav>
     </div>
     <!-- Navbar End -->
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Welcome</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Thank You for your feedback.
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Jumbotron -->
     <div class="container">
-        <div class="jumbotron text-center jumbo-img">
+        <div class="jumbotron jumbo-img text-center">
+            <!-- Large modal -->
             <h1 class="display-3">Let's Clear the Air</h1>
+            <br>
             <p class="lead">There aren't enough air quality sensors in India, so it's
                 <br>hard to track air pollution. Please help collect this
                 <br>data to keep your family and neighbors healthy.</p>
-            <div class="row">
-                <div class="col-3 push-3">
-                    <input class="form-control mr-sm-2 jumbo-col" type="text" placeholder="Your Area Code">
+            <form action="" class="form-block">
+                <div class="row">
+                    <div class="col-sm-3 offset-sm-3">
+                        <input class="form-control jumbo-col" type="text" placeholder="Your Area">
+                    </div>
+                    <div class="col-sm-3">
+                        <input class="form-control jumbo-col" type="text" placeholder="Air Quality">
+                    </div>
                 </div>
-                <div class="col-3 push-3">
-                    <input class="form-control mr-sm-2 jumbo-col" type="text" placeholder="Air Quality">
+                <div class="row">
+                    <div class="col-sm-12 mt-3">
+                        <a class="btn btn-md btn-warning" type="button" data-toggle="modal" data-target=".bd-example-modal-lg" " role="button ">Submit</a>
+                    </div>
                 </div>
-            </div>
-            <div class="row text-center">
-                <div class="col-4 push-4">
-                    <a class="btn btn-md jumbo-col2" href="#" role="button">Submit</a>
-                </div>
-            </div>
-            <!-- <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button> -->
+            </form>
         </div>
-        <hr>
+        <!-- <button class="btn btn-outline-danger my-2 my-sm-0 " type="submit ">Search</button> -->
+    </div>
+    <hr>
     </div>
     <!-- Jumbotron End -->
     <!-- Component -->
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-7">
-                <iframe src="https://www.youtube.com/embed/nCu8mwHOCAY" frameborder="0" allowfullscreen>
+    <div class="container ">
+        <div class="row ">
+            <div class="col-sm-7 ">
+                <iframe src="https://www.youtube.com/embed/nCu8mwHOCAY " frameborder="0 " allowfullscreen>
                 </iframe>
             </div>
-            <div class="col-lg-5">
-                <p class="text-justify"><strong>North/Northwest India:</strong> Cloudy weather in Delhi and north India today has raised hopes of everyone. Everyone is eagerly waiting for the rains. Winds over Punjab, Haryana, and north Rajasthan, Delhi and west UP will blow from easterly direction. These winds could be warm. One reason why mornings and nights are not so cool in Delhi and adjoining areas. Morning temperature in Delhi yesterday was recorded at 16.8 degrees. Maximum temperatures will be around 30 in the plains of north India but could soon change due to rain and settle around 28 degrees. WEATHER: Up in the hills light to moderate snow is possible at many places over J&K and HP. Uttarakhand will also get rain and snow at a few places. Rain or thunder showers are expected at a few places over west and north Rajasthan, Punjab, Haryana and west U.P as well.</p>
+            <div class="col-lg-5 ">
+                <p class="text-justify "><strong>North/Northwest India:</strong> Cloudy weather in Delhi and north India today has raised hopes of everyone. Everyone is eagerly waiting for the rains. Winds over Punjab, Haryana, and north Rajasthan, Delhi and west UP will blow from easterly direction. These winds could be warm. One reason why mornings and nights are not so cool in Delhi and adjoining areas. Morning temperature in Delhi yesterday was recorded at 16.8 degrees. Maximum temperatures will be around 30 in the plains of north India but could soon change due to rain and settle around 28 degrees. WEATHER: Up in the hills light to moderate snow is possible at many places over J&K and HP. Uttarakhand will also get rain and snow at a few places. Rain or thunder showers are expected at a few places over west and north Rajasthan, Punjab, Haryana and west U.P as well.</p>
             </div>
         </div>
         <hr>
     </div>
     <!-- Component End -->
     <!-- Component -->
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-5">
-                <p class="text-justify"><strong>Central India</strong> WIND: Dry Vidharbha that sees drought like conditions every year may get rain in the next 24 hours due to a circulation of winds. Winds over Madhya Pradesh and Vidharbha will blow from northwest direction. Chhattisgarh will get humid winds from the east. Weather: Maximum temperatures will remain stable for next 24 hours thereafter a fall of one or two degrees is possible. East MP and Chhattisgarh will get rain/thunder shower at a few places on 14th March due to the same system that will give rain in north India. Vidharbha will also get light rain at one or two places on 14th of March. After the national weather, let's move on to your favorite part, the weather in major cities: Maximum of Delhi will be 34 degrees. Minimum will be 16 degrees. Mumbai will have a maximum of 33 degrees. Minimums will be 19 degrees.
+    <div class="container ">
+        <div class="row ">
+            <div class="col-lg-5 ">
+                <p class="text-justify "><strong>Central India</strong> WIND: Dry Vidharbha that sees drought like conditions every year may get rain in the next 24 hours due to a circulation of winds. Winds over Madhya Pradesh and Vidharbha will blow from northwest direction. Chhattisgarh will get humid winds from the east. Weather: Maximum temperatures will remain stable for next 24 hours thereafter a fall of one or two degrees is possible. East MP and Chhattisgarh will get rain/thunder shower at a few places on 14th March due to the same system that will give rain in north India. Vidharbha will also get light rain at one or two places on 14th of March. After the national weather, let's move on to your favorite part, the weather in major cities: Maximum of Delhi will be 34 degrees. Minimum will be 16 degrees. Mumbai will have a maximum of 33 degrees. Minimums will be 19 degrees.
                 </p>
             </div>
-            <div class="col-sm-7">
-                <iframe src="https://www.youtube.com/embed/bSdROkTb-Ok" frameborder="0" allowfullscreen>
+            <div class="col-sm-7 ">
+                <iframe src="https://www.youtube.com/embed/bSdROkTb-Ok " frameborder="0 " allowfullscreen>
                 </iframe>
             </div>
         </div>
@@ -117,53 +137,60 @@
     </div>
     <!-- Component End -->
     <!-- Paging -->
-    <nav aria-label="Page navigation example">
-        <ul class="pagination pagination-sm justify-content-center pag-margin">
-            <li class="page-item">
-                <a class="page-link" href="#" aria-label="Previous">
-        <span aria-hidden="true">&laquo;</span>
-        <span class="sr-only">Previous</span>
+    <nav aria-label="Page navigation example ">
+        <ul class="pagination pagination-sm justify-content-center pag-margin ">
+            <li class="page-item ">
+                <a class="page-link " href="# " aria-label="Previous ">
+        <span aria-hidden="true ">&laquo;</span>
+        <span class="sr-only ">Previous</span>
       </a>
             </li>
-            <li class="page-item"><a class="page-link" href="../index.html">1</a></li>
-            <li class="page-item"><a class="page-link" href="another.html">2</a></li>
-            <li class="page-item">
-                <a class="page-link" href="#" aria-label="Next">
-        <span aria-hidden="true">&raquo;</span>
-        <span class="sr-only">Next</span>
+            <li class="page-item "><a class="page-link " href="../index.html ">1</a></li>
+            <li class="page-item "><a class="page-link " href="another.html ">2</a></li>
+            <li class="page-item ">
+                <a class="page-link " href="# " aria-label="Next ">
+        <span aria-hidden="true ">&raquo;</span>
+        <span class="sr-only ">Next</span>
       </a>
             </li>
         </ul>
     </nav>
     <!-- Paging End -->
     <!-- Footer -->
-    <div class="container">
+    <div class="container ">
         <footer>
-            <div class="footer">
-                <div class="row">
-                    <div class="col-sm-4">
+            <div class="footer ">
+                <div class="row ">
+                    <div class="col-sm-12 col-md-4 mt-2 ">
                         <h3>Contact Us</h3>
                         <p>&#9963 E-213 Sec 27 Noida, 201301</p>
                         <p>&#9993 myWeather@media.com</p>
                         <p>&#9742 +2 222 222 2222</p>
                         <p>&#9731 www.myWeather.com</p>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-12 col-md-4 mt-2 ">
                         <h3>About</h3>
                         <p>&#9728 About Us</p>
                         <p>&#9729 Privacy</p>
                         <p>&#9730 Terms & Conditions</p>
                     </div>
-                    <div class="col-sm-4 shorte">
+                    <div class="col-sm-12 col-md-4 mt-2 shorte ">
                         <h3>Stay in touch</h3>
-                        <p><a href="https://gmail.com" target="_blank"><img src="../images/gmail.png"></a>
-                            <a href="https://facebook.com" target="_blank"><img src="../images/facebook.png"></a>
-                            <a href="https://youtube.com" target="_blank"><img src="../images/youtube.png"></a>
-                            <a href="https://instagram.com" target="_blank"><img src="../images/insta.png"></a>
-                            <a href="https://twitter.com" target="_blank"><img src="../images/twitter.png"></a></p>
-                        <br>
-                        <input type="email" placeholder="Subscribe For Updates">&nbsp;&nbsp;
-                        <button>Subscribe</button>
+                        <p><a href="https://gmail.com " target="_blank "><img src="../images/gmail.png "></a>
+                            <a href="https://facebook.com " target="_blank "><img src="../images/facebook.png "></a>
+                            <a href="https://youtube.com " target="_blank "><img src="../images/youtube.png "></a>
+                            <a href="https://instagram.com " target="_blank "><img src="../images/insta.png "></a>
+                            <a href="https://twitter.com " target="_blank "><img src="../images/twitter.png "></a></p>
+                        <form action=" " class="form-inline ">
+                            <div class="form-group ">
+                                <label for=" " class="sr-only ">Email</label>
+                                <input type="email " placeholder="Subscribe For Updates " class="form-control form-control-sm ">
+                            </div>
+                            <div class="form-group ">
+                                <label for=" " class="sr-only ">Subscribe Button</label>
+                                <button class="btn btn-info btn-sm ">Subscribe</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -173,24 +200,14 @@
     <!-- Footer End -->
     <!-- All Javascript at the bottom of the page for faster page loading -->
     <!-- First try for the online version of jQuery-->
-    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="../js/bootstrap.min.js "></script>
+    <script src="http://code.jquery.com/jquery.js "></script>
     <!-- If no online access, fallback to our hardcoded version of jQuery -->
     <script>
-    window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')
+    window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js "><\/script>')
     </script>
     <!-- Bootstrap JS -->
-    <script src="../bootstrap/js/bootstrap.min.js"></script>
-    <!-- Custom JS -->
-    <script src="../includes/js/script.js"></script>
-    <script>
-    $(function() {
-        $('[data-toggle="popover"]').popover()
-    });
-
-    $(".popover-dismiss").popover({
-        trigger: "focus"
-    });
-    </script>
+    <script src="../js/bootstrap.min.js "></script>
 </body>
 
 </html>
