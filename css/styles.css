@@ -14,7 +14,7 @@ img {
 footer {
     background: #122;
     color: #eee;
-    font-size: 11px;
+    font-size: 14px;
     padding: 20px;
 }
 
@@ -101,6 +101,7 @@ footer {
 
 
 
+
 /* Extra small devices (portrait phones, less than 576px) */
 
 @media (max-width: 575px) {
@@ -112,7 +113,12 @@ footer {
     .get {
         display: block;
     }
+
+    .col-sm-12 {
+        margin-top: 10px;
+    }
 }
+
 
 
 
@@ -133,7 +139,11 @@ footer {
     .get {
         display: block;
     }
+    .col-sm-12 {
+        margin-top: 10px;
+    }
 }
+
 
 
 
@@ -156,9 +166,11 @@ footer {
 
 
 
+
 /* Large devices (desktops, 992px and up) */
 
 @media (min-width: 992px) and (max-width: 1199px) {}
+
 
 
 
