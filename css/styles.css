@@ -100,13 +100,20 @@ footer {
 
 
 
+
 /* Extra small devices (portrait phones, less than 576px) */
 
 @media (max-width: 575px) {
+
+    .jumbo-img h1 {
+        font-size: 40px;
+    }
+
     .get {
         display: block;
     }
 }
+
 
 
 
@@ -134,6 +141,7 @@ footer {
 
 
 
+
 /* Medium devices (tablets, 768px and up) */
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -147,9 +155,11 @@ footer {
 
 
 
+
 /* Large devices (desktops, 992px and up) */
 
 @media (min-width: 992px) and (max-width: 1199px) {}
+
 
 
 
