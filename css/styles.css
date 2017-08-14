@@ -8,7 +8,7 @@ iframe {
 }
 
 img {
-  max-width: 100%;
+    max-width: 100%;
 }
 
 footer {
@@ -16,7 +16,6 @@ footer {
     color: #eee;
     font-size: 11px;
     padding: 20px;
-    margin-top: 5px;
 }
 
 .logo img {
@@ -39,7 +38,7 @@ footer {
 }
 
 .card {
-	height: 100%;
+    height: 100%;
 }
 
 .card img {
@@ -53,8 +52,8 @@ footer {
 }
 
 .jumbotron {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .jumbo-col {
@@ -73,13 +72,13 @@ footer {
 }
 
 .align-btn {
-	display: flex;
-	align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .cent {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .card {
@@ -91,27 +90,72 @@ footer {
     margin-top: 10px;
 }
 
-
-// Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575px) { 
-
+.get {
+    display: none;
 }
+
+
+
+
+
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+
+@media (max-width: 575px) {
+    .get {
+        display: block;
+    }
+}
+
+
+
+
+
 
 /* Small devices (landscape phones, 576px and up)*/
-@media (max-width: 767px) { 
 
-  .card {
-		width: 100%;
+@media (max-width: 767px) {
+
+    .card {
+        width: 100%;
+    }
+    form {
+        display: none;
+    }
+    .get {
+        display: block;
+    }
 }
-  form {
-       display: none;
-  }
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991px) { ... }
 
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199px) { ... }
 
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
+
+
+
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .get {
+        display: block;
+    }
+}
+
+
+
+
+
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+
+
+
+
+
+/*  Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {}
